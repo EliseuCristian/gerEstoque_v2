@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Registro</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/style_regis.css">
+</head>
+<body>
+    <div class="banner">
+        <h2>Registro de Usuário</h2>
+    </div>
+    <div class="registration-box">
+        <form action="processar_registro.php" method="POST">
+            <table>
+                <tr>
+                    <td><label for="nome">Nome:</label></td>
+                    <td><input type="text" id="nome" name="nome" required></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email:</label></td>
+                    <td><input type="email" id="email" name="email" required></td>
+                </tr>
+                <tr>
+                    <td><label for="senha">Senha:</label></td>
+                    <td><input type="password" id="senha" name="senha" required></td>
+                </tr>
+                <tr>
+                    <td><label for="confirmar_senha">Confirmar senha:</label></td>
+                    <td><input type="password" id="confirmar_senha" name="confirmar_senha" required></td>
+                </tr>
+
+            </table>
+            <div class="tologin"><a href="../login/login.html">Já possui uma conta?</a></div>
+            <input type="submit" value="Registrar">
+        </form>
+    </div>
+</body>
+</html>

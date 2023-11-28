@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Registro</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/style_login.css">
+</head>
+<body>
+    <div class="banner">
+        <h2>Acessar conta</h2>
+    </div>
+<div class="registration-box">
+        <form action="cadastro.php" method="POST">
+            <table>
+                <tr>
+                    <td><label for="nome">Nome:</label></td>
+                    <td><input type="name" id="nome" name="nome" required></td>
+                </tr>
+                <tr>
+                    <td><label for="senha">Senha:</label></td>
+                    <td><input type="password" id="senha" name="senha" required></td>
+                </tr>
+
+            </table>
+            <div class="toregister"><a href="../register/register.html">Não possui uma conta?</a></div>
+            <input type="submit" value="Entrar">
+        </form>
+    </div>
+</body>
+</html>
